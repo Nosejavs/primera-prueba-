@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* Rosa claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+    align-items: center;
+}
+
+header {
+    background-color: #e91e73; /* Rosa oscuro */
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+#frase-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas responsivas */
+    gap: 25px;
+    padding: 30px;
+    max-width: 1200px;
+    width: 100%;
+    flex-grow: 1; /* Para que ocupe el espacio disponible */
+}
+
+.frase-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.frase-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.frase-text {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.frase-author {
+    font-weight: bold;
+    color: #e91e63;
+}
+
+footer {
+    background-color: #e91e63;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    }
